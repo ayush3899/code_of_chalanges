@@ -1,0 +1,30 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+#define ll long long int
+using namespace std;
+ll sum(ll n,ll d)
+{
+    n/=d;
+    return( d*n*(n+1))/2;
+}
+
+int main() 
+{
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    ll t,s=0,n;
+    cin>>t;
+    while(t--)
+    {
+        cin>>n;
+        {
+            s=sum(n-1,3)+sum(n-1,5)-sum(n-1,3*5);    
+         }
+         cout<<s<<"\n";
+    }
+    
+    
+    return 0;
+}
