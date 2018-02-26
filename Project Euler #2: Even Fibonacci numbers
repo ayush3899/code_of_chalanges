@@ -1,0 +1,29 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+#define ll long long int
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    ll t;
+    cin>>t;
+    while(t--)
+    {
+        ll n,b=2,a=0,s=0,y;
+        cin>>n;
+        while(1)
+        {
+          y=4*a+b;
+            if(y>n) break;
+            b=a;      
+          a=y;
+          s+=y;
+        }
+        cout<<s<<"\n";
+    }
+    return 0;
+}
